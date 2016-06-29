@@ -52,7 +52,7 @@ and open the template in the editor.
                                     var video = document.querySelector('video');
                                     video.src = window.URL.createObjectURL(localMediaStream);
                                     video.onloadedmetadata = function (e) {
-
+                                        console.log(e);
                                     };
                                 },
                                 // errorCallback *Opcional
