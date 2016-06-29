@@ -80,7 +80,7 @@ and open the template in the editor.
                                             readers: ["code_128_reader"],
                                             locate: true, // try to locate the barcode in the image
                                             halfSample: true,
-                                            patchSize: "small",
+                                            patchSize: "medium",
                                             src: canvas.toDataURL('image/png')// or 'data:image/jpg;base64,' + data
                                         },
                                                 function (result) {
@@ -88,16 +88,11 @@ and open the template in the editor.
 
                                                     if (result.codeResult) {
                                                         $("#item").html(result.codeResult.code);
+                                                    }else{
+                                                         $("#item").html("ERROR al Leer codigo! Intente de nuevo!!");
                                                     }
-
-
                                                 }
                                         );
-
-
-
-
-
 //                                        var data = canvas.toDataURL('image/png');
                                        
                                         //        photo.setAttribute('src', video);
