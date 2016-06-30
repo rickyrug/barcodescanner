@@ -68,13 +68,13 @@ and open the template in the editor.
                                     var canvas = document.getElementById('canvas');
                                     var photo = document.getElementById('photo');
                                     var context = canvas.getContext('2d');
-                                    var width = 1920;
-                                    var height = 1080;
+                                    var width = 600;
+                                    var height = 400;
                                     if (width && height) {
                                         canvas.width = width;
                                         canvas.height = height;
 
-                                        context.drawImage(video, 0, 0, 600, 338);
+                                        context.drawImage(video, 0, 0, 600, 400);
 
 
                                         Quagga.decodeSingle(
